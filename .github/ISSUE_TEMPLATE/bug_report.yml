@@ -1,0 +1,23 @@
+name: Bug report
+description: Report incorrect behavior with a synthetic reproduction
+body:
+  - type: markdown
+    attributes:
+      value: Do not include private records or secrets. Follow SECURITY.md for security issues.
+  - type: input
+    id: version
+    attributes:
+      label: Package and Node.js versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Include input, actual output and independently calculated expected output.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Impact and context

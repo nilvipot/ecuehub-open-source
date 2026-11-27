@@ -1,0 +1,23 @@
+{
+  "name": "ecuehub-open-source",
+  "version": "1.0.0",
+  "description": "Open-source equestrian tools for dressage education, training and competition analysis.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://ecuehub.es",
+  "repository": { "type": "git", "url": "https://github.com/nilvipot/ecuehub-open-source.git" },
+  "engines": { "node": ">=24.12" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:coverage": "node --experimental-test-coverage --test tests/*.test.mjs",
+    "example": "node examples/scorecard.mjs",
+    "audit:source": "node scripts/audit.mjs",
+    "check": "npm run typecheck && npm run build && npm test && npm run example && npm run audit:source",
+    "prepack": "npm run build"
+  },
+  "devDependencies": { "typescript": "5.9.3" }
+}

@@ -1,0 +1,20 @@
+name: Feature request
+description: Propose a concrete equestrian or developer improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and intended users
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and alternatives
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Rule references and rights, if applicable
+      description: Link primary sources without copying protected test sheets.
