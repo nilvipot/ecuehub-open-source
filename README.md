@@ -90,4 +90,4 @@ See [API and formulas](docs/api.md), [architecture](docs/architecture.md), [prov
 
 ## Project status and license
 
-Initial 1.0.0 release candidate pending maintainer approval and public CI. No external adoption, download counts or impact metrics are claimed. MIT licensed; ECUE Hub names and trademarks are not licensed as branding rights. No affiliation with or approval by a federation or Anthropic is implied.
+Version 1.0.0. The public CI matrix has passed on Node.js 24 and 26. No external adoption, download counts or impact metrics are claimed. MIT licensed; ECUE Hub names and trademarks are not licensed as branding rights. No affiliation with or approval by a federation or Anthropic is implied.
